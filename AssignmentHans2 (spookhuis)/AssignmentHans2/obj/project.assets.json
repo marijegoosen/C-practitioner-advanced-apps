@@ -671,11 +671,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Marije\\source\\repos\\C# practitioner advanced apps\\AssignmentHans2 (spookhuis)\\AssignmentHans2\\HauntedHouse.csproj",
+      "projectUniqueName": "C:\\Users\\Marije\\Source\\Repos\\C-practitioner-advanced-apps\\AssignmentHans2 (spookhuis)\\AssignmentHans2\\HauntedHouse.csproj",
       "projectName": "HauntedHouse",
-      "projectPath": "C:\\Users\\Marije\\source\\repos\\C# practitioner advanced apps\\AssignmentHans2 (spookhuis)\\AssignmentHans2\\HauntedHouse.csproj",
+      "projectPath": "C:\\Users\\Marije\\Source\\Repos\\C-practitioner-advanced-apps\\AssignmentHans2 (spookhuis)\\AssignmentHans2\\HauntedHouse.csproj",
       "packagesPath": "C:\\Users\\Marije\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Marije\\source\\repos\\C# practitioner advanced apps\\AssignmentHans2 (spookhuis)\\AssignmentHans2\\obj\\",
+      "outputPath": "C:\\Users\\Marije\\Source\\Repos\\C-practitioner-advanced-apps\\AssignmentHans2 (spookhuis)\\AssignmentHans2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",

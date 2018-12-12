@@ -1,0 +1,11 @@
+C:\Users\Marije\Source\Repos\C-practitioner-advanced-apps\AssignmentHans2 (spookhuis)\AssignmentHans2\bin\Debug\netcoreapp2.0\HauntedHouse.deps.json
+C:\Users\Marije\Source\Repos\C-practitioner-advanced-apps\AssignmentHans2 (spookhuis)\AssignmentHans2\bin\Debug\netcoreapp2.0\HauntedHouse.runtimeconfig.json
+C:\Users\Marije\Source\Repos\C-practitioner-advanced-apps\AssignmentHans2 (spookhuis)\AssignmentHans2\bin\Debug\netcoreapp2.0\HauntedHouse.runtimeconfig.dev.json
+C:\Users\Marije\Source\Repos\C-practitioner-advanced-apps\AssignmentHans2 (spookhuis)\AssignmentHans2\bin\Debug\netcoreapp2.0\HauntedHouse.dll
+C:\Users\Marije\Source\Repos\C-practitioner-advanced-apps\AssignmentHans2 (spookhuis)\AssignmentHans2\bin\Debug\netcoreapp2.0\HauntedHouse.pdb
+C:\Users\Marije\Source\Repos\C-practitioner-advanced-apps\AssignmentHans2 (spookhuis)\AssignmentHans2\obj\Debug\netcoreapp2.0\HauntedHouse.csprojResolveAssemblyReference.cache
+C:\Users\Marije\Source\Repos\C-practitioner-advanced-apps\AssignmentHans2 (spookhuis)\AssignmentHans2\obj\Debug\netcoreapp2.0\HauntedHouse.csproj.CoreCompileInputs.cache
+C:\Users\Marije\Source\Repos\C-practitioner-advanced-apps\AssignmentHans2 (spookhuis)\AssignmentHans2\obj\Debug\netcoreapp2.0\HauntedHouse.AssemblyInfoInputs.cache
+C:\Users\Marije\Source\Repos\C-practitioner-advanced-apps\AssignmentHans2 (spookhuis)\AssignmentHans2\obj\Debug\netcoreapp2.0\HauntedHouse.AssemblyInfo.cs
+C:\Users\Marije\Source\Repos\C-practitioner-advanced-apps\AssignmentHans2 (spookhuis)\AssignmentHans2\obj\Debug\netcoreapp2.0\HauntedHouse.dll
+C:\Users\Marije\Source\Repos\C-practitioner-advanced-apps\AssignmentHans2 (spookhuis)\AssignmentHans2\obj\Debug\netcoreapp2.0\HauntedHouse.pdb
