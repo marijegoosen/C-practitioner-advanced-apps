@@ -1,0 +1,22 @@
+c:\users\marije\source\repos\AssignmentHans2\AssignmentHans2\bin\Debug\netcoreapp2.0\AssignmentHans2.deps.json
+c:\users\marije\source\repos\AssignmentHans2\AssignmentHans2\bin\Debug\netcoreapp2.0\AssignmentHans2.runtimeconfig.json
+c:\users\marije\source\repos\AssignmentHans2\AssignmentHans2\bin\Debug\netcoreapp2.0\AssignmentHans2.runtimeconfig.dev.json
+c:\users\marije\source\repos\AssignmentHans2\AssignmentHans2\bin\Debug\netcoreapp2.0\AssignmentHans2.dll
+c:\users\marije\source\repos\AssignmentHans2\AssignmentHans2\bin\Debug\netcoreapp2.0\AssignmentHans2.pdb
+c:\users\marije\source\repos\AssignmentHans2\AssignmentHans2\obj\Debug\netcoreapp2.0\AssignmentHans2.csprojResolveAssemblyReference.cache
+c:\users\marije\source\repos\AssignmentHans2\AssignmentHans2\obj\Debug\netcoreapp2.0\AssignmentHans2.csproj.CoreCompileInputs.cache
+c:\users\marije\source\repos\AssignmentHans2\AssignmentHans2\obj\Debug\netcoreapp2.0\AssignmentHans2.AssemblyInfoInputs.cache
+c:\users\marije\source\repos\AssignmentHans2\AssignmentHans2\obj\Debug\netcoreapp2.0\AssignmentHans2.AssemblyInfo.cs
+c:\users\marije\source\repos\AssignmentHans2\AssignmentHans2\obj\Debug\netcoreapp2.0\AssignmentHans2.dll
+c:\users\marije\source\repos\AssignmentHans2\AssignmentHans2\obj\Debug\netcoreapp2.0\AssignmentHans2.pdb
+C:\Users\Marije\source\repos\C# practitioner advanced apps\AssignmentHans2 (spookhuis)\AssignmentHans2\bin\Debug\netcoreapp2.0\AssignmentHans2.deps.json
+C:\Users\Marije\source\repos\C# practitioner advanced apps\AssignmentHans2 (spookhuis)\AssignmentHans2\bin\Debug\netcoreapp2.0\AssignmentHans2.runtimeconfig.json
+C:\Users\Marije\source\repos\C# practitioner advanced apps\AssignmentHans2 (spookhuis)\AssignmentHans2\bin\Debug\netcoreapp2.0\AssignmentHans2.runtimeconfig.dev.json
+C:\Users\Marije\source\repos\C# practitioner advanced apps\AssignmentHans2 (spookhuis)\AssignmentHans2\bin\Debug\netcoreapp2.0\AssignmentHans2.dll
+C:\Users\Marije\source\repos\C# practitioner advanced apps\AssignmentHans2 (spookhuis)\AssignmentHans2\bin\Debug\netcoreapp2.0\AssignmentHans2.pdb
+C:\Users\Marije\source\repos\C# practitioner advanced apps\AssignmentHans2 (spookhuis)\AssignmentHans2\obj\Debug\netcoreapp2.0\AssignmentHans2.csprojResolveAssemblyReference.cache
+C:\Users\Marije\source\repos\C# practitioner advanced apps\AssignmentHans2 (spookhuis)\AssignmentHans2\obj\Debug\netcoreapp2.0\AssignmentHans2.csproj.CoreCompileInputs.cache
+C:\Users\Marije\source\repos\C# practitioner advanced apps\AssignmentHans2 (spookhuis)\AssignmentHans2\obj\Debug\netcoreapp2.0\AssignmentHans2.AssemblyInfoInputs.cache
+C:\Users\Marije\source\repos\C# practitioner advanced apps\AssignmentHans2 (spookhuis)\AssignmentHans2\obj\Debug\netcoreapp2.0\AssignmentHans2.AssemblyInfo.cs
+C:\Users\Marije\source\repos\C# practitioner advanced apps\AssignmentHans2 (spookhuis)\AssignmentHans2\obj\Debug\netcoreapp2.0\AssignmentHans2.dll
+C:\Users\Marije\source\repos\C# practitioner advanced apps\AssignmentHans2 (spookhuis)\AssignmentHans2\obj\Debug\netcoreapp2.0\AssignmentHans2.pdb
