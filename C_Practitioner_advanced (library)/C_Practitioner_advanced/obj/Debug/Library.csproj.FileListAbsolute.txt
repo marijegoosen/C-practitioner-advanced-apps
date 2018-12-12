@@ -1,0 +1,7 @@
+C:\Users\Marije\source\repos\C# practitioner advanced apps\C_Practitioner_advanced (library)\C_Practitioner_advanced\bin\Debug\C_Practitioner_advanced.exe.config
+C:\Users\Marije\source\repos\C# practitioner advanced apps\C_Practitioner_advanced (library)\C_Practitioner_advanced\bin\Debug\C_Practitioner_advanced.exe
+C:\Users\Marije\source\repos\C# practitioner advanced apps\C_Practitioner_advanced (library)\C_Practitioner_advanced\bin\Debug\C_Practitioner_advanced.pdb
+C:\Users\Marije\source\repos\C# practitioner advanced apps\C_Practitioner_advanced (library)\C_Practitioner_advanced\obj\Debug\Library.csprojResolveAssemblyReference.cache
+C:\Users\Marije\source\repos\C# practitioner advanced apps\C_Practitioner_advanced (library)\C_Practitioner_advanced\obj\Debug\Library.csproj.CoreCompileInputs.cache
+C:\Users\Marije\source\repos\C# practitioner advanced apps\C_Practitioner_advanced (library)\C_Practitioner_advanced\obj\Debug\C_Practitioner_advanced.exe
+C:\Users\Marije\source\repos\C# practitioner advanced apps\C_Practitioner_advanced (library)\C_Practitioner_advanced\obj\Debug\C_Practitioner_advanced.pdb

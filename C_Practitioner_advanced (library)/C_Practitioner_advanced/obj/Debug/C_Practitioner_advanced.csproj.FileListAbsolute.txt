@@ -1,0 +1,7 @@
+C:\Users\Marije\Documents\Visual Studio 2017\Projects\C_Practitioner_advanced\C_Practitioner_advanced\bin\Debug\C_Practitioner_advanced.exe.config
+C:\Users\Marije\Documents\Visual Studio 2017\Projects\C_Practitioner_advanced\C_Practitioner_advanced\bin\Debug\C_Practitioner_advanced.exe
+C:\Users\Marije\Documents\Visual Studio 2017\Projects\C_Practitioner_advanced\C_Practitioner_advanced\bin\Debug\C_Practitioner_advanced.pdb
+C:\Users\Marije\Documents\Visual Studio 2017\Projects\C_Practitioner_advanced\C_Practitioner_advanced\obj\Debug\C_Practitioner_advanced.csprojResolveAssemblyReference.cache
+C:\Users\Marije\Documents\Visual Studio 2017\Projects\C_Practitioner_advanced\C_Practitioner_advanced\obj\Debug\C_Practitioner_advanced.csproj.CoreCompileInputs.cache
+C:\Users\Marije\Documents\Visual Studio 2017\Projects\C_Practitioner_advanced\C_Practitioner_advanced\obj\Debug\C_Practitioner_advanced.exe
+C:\Users\Marije\Documents\Visual Studio 2017\Projects\C_Practitioner_advanced\C_Practitioner_advanced\obj\Debug\C_Practitioner_advanced.pdb
