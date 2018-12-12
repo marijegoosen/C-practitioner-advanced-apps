@@ -9,6 +9,7 @@ namespace HauntedHouse
     {
         public static void Main()
         {
+            Console.WriteLine("this works");
             var done = false;
             string answerExit = "no";
             var game = new Game();
