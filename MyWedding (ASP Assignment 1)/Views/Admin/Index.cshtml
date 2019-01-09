@@ -1,61 +1,72 @@
 @model List<Guest>
 <!-- add new guest form -->
-<form class="ui form" asp-action="AddGuest"></form>
+<form class="ui form" asp-action="AddGuest">
+    <h1>Add a guest</h1>
+    <div class="field">
+        <label>Name</label>
+        <input type="text" name="name" placeholder="Name">
+    </div>
+    <div class="field">
+        <label>Welcome code</label>
+        <input type="text" name="code" placeholder="Welcome code">
+    </div>
+    <button class="ui primary button" type="submit">Add</button>
+</form>
 
-<table class="ui celled table">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Welcome code</th>
-            <th>Is attending</th>
-            <th>Meal preference</th>
-            <th>Comments</th>
-            <th>Modify</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var guest in Model)
-        {
+    <table class="ui celled table">
+        <thead>
             <tr>
-                <td>@guest.Name</td>
-                <td>@guest.Code</td>
+                <th>Name</th>
+                <th>Welcome code</th>
+                <th>Is attending</th>
+                <th>Meal preference</th>
+                <th>Comments</th>
+                <th>Modify</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var guest in Model)
+            {
+                <tr>
+                    <td>@guest.Name</td>
+                    <td>@guest.Code</td>
 
-                @if (guest.HasResponded)
-                {
-                    if (guest.IsAttending)
+                    @if (guest.HasResponded)
                     {
-                        <td>Yes</td>
+                        if (guest.IsAttending)
+                        {
+                            <td>Yes</td>
+                        }
+                        else
+                        {
+                            <td>No</td>
+                        }
                     }
                     else
                     {
-                        <td>No</td>
+                        <td>No response yet</td>
                     }
-                }
-                else
-                {
-                    <td>No response yet</td>
-                }
 
-                @if (guest.HasResponded && guest.IsAttending)
-                {
-                    <td>@guest.MealType.ToString()</td>
-                }
-                else
-                {
-                    <td></td>
-                }
-                <td>@guest.Comments</td>
-                <td>
-                    <form class="ui form" asp-action="DeleteGuest">
-                        <input type="hidden" value="@guest.Id" name="id" />
-                        <button class="ui red button" type="submit">Delete</button>
-                        <a asp-action="Edit" asp-route-id="@guest.Id" class="ui primary button">Edit</a>
-                    </form>
-                </td>
-            </tr>
-        }
+                    @if (guest.HasResponded && guest.IsAttending)
+                    {
+                        <td>@guest.MealType.ToString()</td>
+                    }
+                    else
+                    {
+                        <td></td>
+                    }
+                    <td>@guest.Comments</td>
+                    <td>
+                        <form class="ui form" asp-action="DeleteGuest">
+                            <input type="hidden" value="@guest.Id" name="id" />
+                            <button class="ui red button" type="submit">Delete</button>
+                            <a asp-action="Edit" asp-route-id="@guest.Id" class="ui primary button">Edit</a>
+                        </form>
+                    </td>
+                </tr>
+            }
 
-    </tbody>
+        </tbody>
 
-</table>
+    </table>
 
