@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using CarCompany.Models;
+using CarCompany.Enums;
 
 namespace CarCompany.Controllers
 {
@@ -18,6 +19,24 @@ namespace CarCompany.Controllers
         public ProjectsController(CarCompanyContext context)
         {
             _context = context;
+
+            if (_context.Project.Count() == 0)
+            {
+                _context.Project.Add(new Project
+                {
+//TODO; add user and skills IList to default project
+                    ProjectId = 00001,
+                    ProjectType = EProjectType.FullTime,
+                    Name = "Company 1",
+                    Description = "Default",
+                    ImageUrl = "Default",
+                    StartDate = DateTime.Now,
+                    EndDate = DateTime.Today,
+                    //User = ??,
+                    //Skills = ??,
+                });
+                _context.SaveChanges();
+            }
         }
 
         // GET: api/Projects

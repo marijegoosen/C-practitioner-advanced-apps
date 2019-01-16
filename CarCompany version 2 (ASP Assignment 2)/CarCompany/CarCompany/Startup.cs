@@ -23,7 +23,9 @@ namespace CarCompany
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
             services.AddDbContext<CarCompanyContext>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("CarCompanyContext")));
+            options.UseInMemoryDatabase("CarCompany"));
+            //services.AddDbContext<CarCompanyContext>(options =>
+            //        options.UseSqlServer(Configuration.GetConnectionString("CarCompanyContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -38,6 +40,8 @@ namespace CarCompany
                 app.UseHsts();
             }
 
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
             app.UseHttpsRedirection();
             app.UseMvc();
         }

@@ -98,6 +98,9 @@ function deleteItem(id) {
     $.ajax({
         url: uri + "/" + id,
         type: "DELETE",
+        error: function (jqXHR, textStatus, errorThrown) {
+            alert("Something went wrong!");
+        },
         success: function (result) {
             getData();
         }
@@ -138,6 +141,9 @@ $(".my-form").on("submit", function () {
         accepts: "application/json",
         contentType: "application/json",
         data: JSON.stringify(item),
+        error: function (jqXHR, textStatus, errorThrown) {
+            alert("Something went wrong!");
+        },
         success: function (result) {
             getData();
         }

@@ -18,13 +18,31 @@ namespace CarCompany.Controllers
         public CarsController(CarCompanyContext context)
         {
             _context = context;
+
+            if (_context.Car.Count() == 0)
+            {
+                _context.Car.Add(new Car
+                {
+//TODO; add default company and user to default car
+                    CarId = 00001,
+                    Name = "Car 1",
+                    Model = "Default",
+                    Description = "Default",
+                    Range = 00000,
+                    Mileage = 00000,
+                    //Company = ??,
+                    //User = ??,
+                    
+                });
+                _context.SaveChanges();
+            }
         }
 
         // GET: api/Cars
         [HttpGet]
-        public IEnumerable<Car> GetCar()
+        public async Task<ActionResult<IEnumerable<Car>>> GetCar()
         {
-            return _context.Car;
+            return await _context.Car.ToListAsync();
         }
 
         // GET: api/Cars/5

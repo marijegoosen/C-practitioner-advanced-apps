@@ -15,6 +15,5 @@ namespace CarCompany.Models
         public string Vision { get; set; }
         public string Website { get; set; }
         public IList<Car> Cars { get; set; }
-
     }
 }
