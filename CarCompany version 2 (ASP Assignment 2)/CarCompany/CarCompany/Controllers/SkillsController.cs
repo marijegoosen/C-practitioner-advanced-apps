@@ -18,19 +18,6 @@ namespace CarCompany.Controllers
         public SkillsController(CarCompanyContext context)
         {
             _context = context;
-
-            if (_context.Skill.Count() == 0)
-            {
-                _context.Skill.Add(new Skill
-                {
-//TODO; add companyID to default skill
-                    SkillId = 00001,
-                    Name = "Company 1",
-                    Description = "Default",
-                    //CompanyID = ??,
-                });
-                _context.SaveChanges();
-            }
     }
 
         // GET: api/Skills

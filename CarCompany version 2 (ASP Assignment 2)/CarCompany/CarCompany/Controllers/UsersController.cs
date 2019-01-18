@@ -19,24 +19,6 @@ namespace CarCompany.Controllers
         {
             _context = context;
 
-            if (_context.User.Count() == 0)
-            {
-                _context.User.Add(new User
-                {
-//TODO; add project IList and cars IList to default user
-                    UserId = 00001,
-                    UserName = "Default",
-                    Email = "Default",
-                    PhoneNumber = "Default",
-                    Age = 18,
-                    FirstName = "Default",
-                    LastName = "Default",
-                    LastActivityDate = DateTime.Now,
-                    //Project = ??,
-                    //Cars = ??,
-                });
-                _context.SaveChanges();
-            }
         }
 
         // GET: api/Users

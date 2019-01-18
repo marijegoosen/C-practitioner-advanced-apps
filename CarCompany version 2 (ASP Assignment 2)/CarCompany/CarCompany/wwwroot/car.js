@@ -83,13 +83,13 @@ function addItem() {
         },
         success: function (result) {
             getData();
-            $("#add-name").val("");
-            $("#add-model").val("");
-            $("#add-range").val("");
-            $("#add-description").val("");
-            $("#add-milage").val("");
-            $("#add-company").val("");
-            $("#add-user").val("");
+            $("#add-name").val(""),
+            $("#add-model").val(""),
+            $("#add-range").val(""),
+            $("#add-description").val(""),
+            $("#add-milage").val(""),
+            $("#add-company").val(""),
+            $("#add-user").val("")
         }
     });
 }
@@ -110,14 +110,14 @@ function deleteItem(id) {
 function editItem(id) {
     $.each(todos, function (key, item) {
         if (item.id === id) {
-            $("#edit-name").val(item.name);
-            $("#edit-id").val(item.id);
-            $("#edit-model").val(item.model);
-            $("#edit-description").val(item.description);
-            $("#edit-range").val(item.range);
-            $("#edit-milage").val(item.milage);
-            $("#edit-company").val(item.company);
-            $("#edit-user").val(item.user);
+            $("#edit-name").val(item.name),
+            $("#edit-id").val(item.id),
+            $("#edit-model").val(item.model),
+            $("#edit-description").val(item.description),
+            $("#edit-range").val(item.range),
+            $("#edit-milage").val(item.milage),
+            $("#edit-company").val(item.company),
+            $("#edit-user").val(item.user)
         }
     });
     $("#spoiler").css({ display: "block" });

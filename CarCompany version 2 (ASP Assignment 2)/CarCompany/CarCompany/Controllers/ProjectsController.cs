@@ -20,23 +20,6 @@ namespace CarCompany.Controllers
         {
             _context = context;
 
-            if (_context.Project.Count() == 0)
-            {
-                _context.Project.Add(new Project
-                {
-//TODO; add user and skills IList to default project
-                    ProjectId = 00001,
-                    ProjectType = EProjectType.FullTime,
-                    Name = "Company 1",
-                    Description = "Default",
-                    ImageUrl = "Default",
-                    StartDate = DateTime.Now,
-                    EndDate = DateTime.Today,
-                    //User = ??,
-                    //Skills = ??,
-                });
-                _context.SaveChanges();
-            }
         }
 
         // GET: api/Projects

@@ -19,22 +19,6 @@ namespace CarCompany.Controllers
         {
             _context = context;
 
-            if (_context.Company.Count() == 0)
-            {
-                _context.Company.Add(new Company
-                {
-//TODO; add Cars IList to default company
-                    CompanyId = 00001,
-                    Name = "Company 1",
-                    Description = "Default",
-                    Mission = "Default",
-                    Strategy = "Default",
-                    Vision = "Default",
-                    Website = "Default",
-                    //Cars = ??,
-                });
-                _context.SaveChanges();
-            }
         }
 
         // GET: api/Companies
