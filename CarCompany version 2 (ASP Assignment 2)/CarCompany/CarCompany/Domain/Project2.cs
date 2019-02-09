@@ -3,12 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace CarCompany.Enums
+namespace CarCompany.Domain
 {
-    public enum EProjectType
+    public class Project2
     {
-        FullTime,
-        PartTime,
-        Freelance
+        public IList<UserToProject> Users { get; set; }
     }
 }

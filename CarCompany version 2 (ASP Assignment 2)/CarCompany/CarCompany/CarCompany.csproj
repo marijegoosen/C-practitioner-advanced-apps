@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="..\..\..\CarCompany version 2 %2528ASP Assignment 2%2529\CarCompany\CarCompany\Domain\Enums\EProjectType.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="editorconfig" Version="0.12.1" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
