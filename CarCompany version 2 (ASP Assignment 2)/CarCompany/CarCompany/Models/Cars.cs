@@ -16,7 +16,15 @@ namespace CarCompany.Models
         public string Description { get; set; }
         public double Range { get; set; }
         public double Mileage { get; set; }
+
         public Company Company { get; set; }
+        public string CompanyName { get; set; }
         public User User { get; set; }
+        public string UserUserName { get; set; }
+
+        public Car()
+        {
+
+        }
     }
 }

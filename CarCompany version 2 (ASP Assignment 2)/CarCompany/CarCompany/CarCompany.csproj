@@ -4,6 +4,11 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 0d372a04ff445dcbf030d122ed39f3a8547338cc
   <ItemGroup>
     <PackageReference Include="editorconfig" Version="0.12.1" />
     <PackageReference Include="Microsoft.AspNetCore.App" />

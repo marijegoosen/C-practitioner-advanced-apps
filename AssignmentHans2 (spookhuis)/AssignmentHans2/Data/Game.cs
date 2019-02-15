@@ -1,4 +1,5 @@
-﻿using HauntedHouse.Enumerations;
+﻿using HauntedHouse.Business;
+using HauntedHouse.Enumerations;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -74,53 +75,27 @@ namespace HauntedHouse.Data
             _currentRoom = entrance;
         }
 
-        private void Logo()
-        {
-            Console.OutputEncoding = System.Text.Encoding.Unicode;
-
-            Console.WriteLine("------------------------------------------------------------------------------");
-            Console.Write("------------------------------");
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.Write("SUPER ZORK");
-            Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine("------------------------------");
-            Console.WriteLine("------------------------------------------------------------------------------");
-
-            var str = @"                         __...---""""""---...__
-           .:::::.   _.-'                      '-._
-       .::::::::::::::::'   ^^      ,              '-.
-  .  .:::''''::::::::'   ,        _/(_       ^^       '.
-   ':::'      .'       _/(_       {\\               ,   '.
-             /         {\\        /;_)            _/(_    \
-            /   ,      /;_)    =='/ <===<<<       {\\      \
-           /  _/(_  =='/ <===<<<  \__\       ,    /;_)      \
-          /   {\\      \__\      , ``      _/(_=='/ <===<<<  \ ";
-
-            Console.WriteLine(str);
-            Console.WriteLine("------------------------------------------------------------------------------");
-        }
-
         private void Initialize()
         {
-            Logo();
+            Logos.LogoGame();
   
             SetPlayerName();
         }
 
         private void SetPlayerName()
         {
-            PrintLambda();
+            Logos.PrintLambda();
 
             Console.WriteLine("What are you called?");
             PlayerName = Console.ReadLine();
 
             while (PlayerName == "")
             {
-                PrintLambda();
+                Logos.PrintLambda();
                 Console.WriteLine("I'm sorry, I did not get that. Can you repeat your name?");
                 PlayerName = Console.ReadLine();
             }
-            PrintLambda();
+            Logos.PrintLambda();
             Console.WriteLine($"Hello {PlayerName}! Lets get started.");
             Console.WriteLine("Press any key to start.");
             var start = Console.ReadLine();
@@ -128,23 +103,9 @@ namespace HauntedHouse.Data
             Console.Clear();
         }
 
-        private static void PrintLambda()
-        {
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.Write("λ ");
-            Console.ForegroundColor = ConsoleColor.White;
-        }
-
         public bool ShouldEnd()
         {
             return _currentRoom.Finish;
-        }
-
-        public void End()
-        {
-            Console.WriteLine("--------------------------");
-            Console.WriteLine("-----       END     ------");
-            Console.WriteLine("--------------------------");
         }
 
         private void Start()
@@ -206,7 +167,7 @@ namespace HauntedHouse.Data
  //               }
 
                 Console.Clear();
-                Logo();
+                Logos.LogoGame();
 
                 switch (direction)
                 {
@@ -244,6 +205,13 @@ namespace HauntedHouse.Data
         public void LookAround()
         {
             _currentRoom.PrintInfo();
+        }
+
+        public void End()
+        {
+            Console.WriteLine("--------------------------");
+            Console.WriteLine("-----       END     ------");
+            Console.WriteLine("--------------------------");
         }
     }
 }
