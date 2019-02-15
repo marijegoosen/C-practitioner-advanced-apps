@@ -14,14 +14,12 @@ namespace CarCompany.Models
         {
         }
 
-        public DbSet<CarCompany.Models.Car> Car { get; set; }
+        public DbSet<Car> Car { get; set; }
+        public DbSet<Company> Company { get; set; }
+        public DbSet<Project> Project { get; set; }
+        public DbSet<Skill> Skill { get; set; }
+        public DbSet<User> User { get; set; }
 
-        public DbSet<CarCompany.Models.Company> Company { get; set; }
 
-        public DbSet<CarCompany.Models.Project> Project { get; set; }
-
-        public DbSet<CarCompany.Models.Skill> Skill { get; set; }
-
-        public DbSet<CarCompany.Models.User> User { get; set; }
     }
 }

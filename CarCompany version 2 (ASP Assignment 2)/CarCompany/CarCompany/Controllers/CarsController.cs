@@ -22,9 +22,9 @@ namespace CarCompany.Controllers
 
         // GET: api/Cars
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Car>>> GetCar()
+        public IEnumerable<Car> GetCar()
         {
-            return await _context.Car.ToListAsync();
+            return _context.Car;
         }
 
         // GET: api/Cars/5

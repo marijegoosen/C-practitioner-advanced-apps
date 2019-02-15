@@ -6,16 +6,17 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using CarCompany.Models;
+using CarCompany.Enums;
 
 namespace CarCompany.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ProjectsController1 : ControllerBase
+    public class ProjectsController : ControllerBase
     {
         private readonly CarCompanyContext _context;
 
-        public ProjectsController1(CarCompanyContext context)
+        public ProjectsController(CarCompanyContext context)
         {
             _context = context;
 
