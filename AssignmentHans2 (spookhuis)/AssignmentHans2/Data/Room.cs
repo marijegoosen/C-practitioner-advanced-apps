@@ -7,6 +7,7 @@ namespace HauntedHouse.Data
 {
     public class Room
     {
+        //properties
         public IDictionary<EDirection, Room> ConnectedRooms = new Dictionary<EDirection, Room>();
         public string Name { get; set; }
         public string Description { get; set; }
@@ -14,6 +15,8 @@ namespace HauntedHouse.Data
 
         public int Ghost { get; set; }
 
+
+        //methods
         public void PrintInfo()
         {
             Console.WriteLine($"Currently in {Name}");

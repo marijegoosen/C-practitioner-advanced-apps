@@ -32,6 +32,7 @@ namespace HauntedHouse.Business
             Console.WriteLine(str);
             Console.WriteLine("------------------------------------------------------------------------------");
         }
+
         //logo for the player
 
         //logo for the ghosts

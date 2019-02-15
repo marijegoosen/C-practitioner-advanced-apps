@@ -1,4 +1,5 @@
-﻿using HauntedHouse.Data;
+﻿using HauntedHouse.Business;
+using HauntedHouse.Data;
 using HauntedHouse.Enumerations;
 using System;
 using System.Collections.Generic;
@@ -10,7 +11,7 @@ namespace HauntedHouse
         public static void Main()
         {
             var done = false;
-            string answerExit = "no";
+            string answerExit;
             var game = new Game();
 
 
@@ -22,7 +23,7 @@ namespace HauntedHouse
 
                 if (game.ShouldEnd()) break;
 
-                PrintLambda();
+                Logos.PrintLambda();
 
                 var input = Console.ReadLine();
                 string args = "";
@@ -35,6 +36,27 @@ namespace HauntedHouse
 
                 switch (input.ToLower())
                 {
+                    case "pick":
+                        {
+                            PlayerCommands.PickUp();
+                            break;
+                        }
+                    case "status":
+                        {
+                            PlayerCommands.PrintStatus();
+                            break;
+                        }
+                    case "inventory":
+                        {
+                            PlayerCommands.PrintInventory();
+                            break;
+                        }
+                    case "view":
+                        {
+                            EViewCommands view;
+                            PlayerCommands.PrintNotValidView();
+                            break;
+                        }
                     case "move":
                         {
                             EDirection direction;
@@ -44,7 +66,7 @@ namespace HauntedHouse
                             }
                             else
                             {
-                                PrintNotValidDirection();
+                                PlayerCommands.PrintNotValidDirection();
                             }
                             break;
                         }
@@ -55,13 +77,13 @@ namespace HauntedHouse
                         }
                     case "help":
                         {
-                            PrintHelp();
+                            PlayerCommands.PrintHelp();
                             break;
                         }
                     case "exit":
                         {
                             Console.WriteLine("Are you sure you want to quit? (y/n)");
-                            PrintLambda();
+                            Logos.PrintLambda();
                             answerExit = Console.ReadLine();
                             //TODO; set anserExit to lowercase
                             if ((answerExit == "yes") || (answerExit == "y"))
@@ -80,8 +102,8 @@ namespace HauntedHouse
                         }
                     default:
                         {
-                            PrintCommandNotFound();
-                            PrintHelp();
+                            PlayerCommands.PrintCommandNotFound();
+                            PlayerCommands.PrintHelp();
                             break;
                         }
                 }
@@ -91,31 +113,6 @@ namespace HauntedHouse
 
             Console.WriteLine("<press any key to exit>");
             Console.ReadKey();
-        }
-
-        private static void PrintCommandNotFound()
-        {
-            Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("Command not found...");
-            Console.ForegroundColor = ConsoleColor.White;
-        }
-
-        private static void PrintHelp()
-        {
-            Console.WriteLine("Help:");
-            Console.WriteLine("Available commands are, Move <to>, Look, Help, Exit");
-        }
-
-        private static void PrintNotValidDirection()
-        {
-            Console.WriteLine("Not a valid direction!?");
-        }
-
-        private static void PrintLambda()
-        {
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.Write("λ ");
-            Console.ForegroundColor = ConsoleColor.White;
         }
     }
 }

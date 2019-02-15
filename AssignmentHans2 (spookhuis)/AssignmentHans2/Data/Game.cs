@@ -1,4 +1,5 @@
 ﻿using HauntedHouse.Business;
+using HauntedHouse.Business.Story_parts;
 using HauntedHouse.Enumerations;
 using System;
 using System.Collections.Generic;
@@ -19,9 +20,10 @@ namespace HauntedHouse.Data
 
             Initialize();
 
-            Start();
+            BeginStory.StartStory();
         }
 
+        //TODO: find way to move to separate class
         private void Setup()
         {
             var entrance = new Room { Description = "Main entrance to the Castle", Name = "Entrance", Ghost = 3 };
@@ -108,17 +110,6 @@ namespace HauntedHouse.Data
             return _currentRoom.Finish;
         }
 
-        private void Start()
-        {
-            Console.WriteLine("A while ago, you got a letter from a long lost uncle. In this letter, your uncle states you inherited his house.");
-            Console.WriteLine("There was one catch: you had to get all the ghosts out of his house first.");
-            Console.WriteLine();
-            Console.WriteLine("The point of this game is either to defeat all the ghosts or to get out one of the doors.");
-            Console.WriteLine("Good luck. You are going to need it. WHAHAHAHAHAHAHAHAHAHA!!!!!!!!!");
-            Console.WriteLine();
-            Console.WriteLine();
-        }
-
         public void DescribeLocation()
         {
             Console.WriteLine($"-- You are currently in {_currentRoom.Name}. --");
@@ -127,26 +118,16 @@ namespace HauntedHouse.Data
 
             if (_currentRoom.Finish)
             {
-                Console.WriteLine("YOU HAVE MADE IT TO THE FINISH!");
-                var str = @"╔═══╗─────────────╔╗───╔╗───╔╗
-║╔═╗║────────────╔╝╚╗──║║──╔╝╚╗
-║║─╚╬══╦═╗╔══╦═╦═╩╗╔╬╗╔╣║╔═╩╗╔╬╦══╦═╗╔══╗
-║║─╔╣╔╗║╔╗╣╔╗║╔╣╔╗║║║║║║║║╔╗║║╠╣╔╗║╔╗╣══╣
-║╚═╝║╚╝║║║║╚╝║║║╔╗║╚╣╚╝║╚╣╔╗║╚╣║╚╝║║║╠══║
-╚═══╩══╩╝╚╩═╗╠╝╚╝╚╩═╩══╩═╩╝╚╩═╩╩══╩╝╚╩══╝
-──────────╔═╝║
-──────────╚══╝";
-                Console.WriteLine(str);
-                Console.WriteLine("-----------------------");
+                Endings.WinnersExit();
             }
         }
 
         public void MoveToDirection(EDirection direction)
         {
-            var validDirection = _currentRoom.ConnectedRooms.TryGetValue(direction, out Room room); //geeft bool terug
+            var validDirection = _currentRoom.ConnectedRooms.TryGetValue(direction, out Room room); //give back bool
             if (validDirection == true)
             {
-                var result = _currentRoom.ConnectedRooms[direction]; //geeft room terug
+                var result = _currentRoom.ConnectedRooms[direction]; //gives back room
                 var lastRoom = _currentRoom;
                 _currentRoom = result;
 
@@ -202,6 +183,7 @@ namespace HauntedHouse.Data
             }
         }
 
+        //TODO: move to PlayerCommands when _currentRoom moved
         public void LookAround()
         {
             _currentRoom.PrintInfo();
@@ -209,9 +191,8 @@ namespace HauntedHouse.Data
 
         public void End()
         {
-            Console.WriteLine("--------------------------");
-            Console.WriteLine("-----       END     ------");
-            Console.WriteLine("--------------------------");
+            Endings.GeneralEnd();
         }
+
     }
 }
