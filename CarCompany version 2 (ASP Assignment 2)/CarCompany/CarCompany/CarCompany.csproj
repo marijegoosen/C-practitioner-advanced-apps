@@ -1,12 +1,8 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Compile Include="..\..\..\CarCompany version 2 %2528ASP Assignment 2%2529\CarCompany\CarCompany\Domain\Enums\EProjectType.cs" />
-  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="editorconfig" Version="0.12.1" />

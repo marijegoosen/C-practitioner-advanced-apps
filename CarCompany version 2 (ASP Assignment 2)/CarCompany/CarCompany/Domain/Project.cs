@@ -1,4 +1,4 @@
-﻿using CarCompany.Enums;
+﻿using CarCompany.Domain.Enums;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -12,7 +12,7 @@ namespace CarCompany.Domain
         [Key]
         public int Id { get; set; }
 
-        public EProjectType ProjectType { get; set; }
+        //public EProjectType ProjectType { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
         public string ImageUrl { get; set; }
